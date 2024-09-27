@@ -32,26 +32,22 @@ pip (Python package installer)
 Installation Steps
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/task_monitor.git
+
+git clone https://github.com/ayushraj5514/task-management.git
 cd task_monitor
 Set up a virtual environment (optional but recommended):
 
-bash
-Copy code
+
 python -m venv venv
 source venv/bin/activate   # On Windows use venv\Scripts\activate
 Install the required dependencies:
 
-bash
-Copy code
+
 pip install -r requirements.txt
 Environment Variables
 Create a .env file in the root of the project directory to store sensitive information like database credentials.
 
-makefile
-Copy code
+
 FLASK_APP=app.py
 FLASK_ENV=development
 DATABASE_URI=mysql+pymysql://root:<password>@localhost/<database_name>
@@ -63,23 +59,20 @@ Make sure MySQL is installed and running.
 
 Create a MySQL database:
 
-sql
-Copy code
+
 CREATE DATABASE task_monitor;
 Update the DATABASE_URI in your .env file.
 
 Initialize the database tables:
 
-bash
-Copy code
+
 flask db init
 flask db migrate
 flask db upgrade
 Running the Application
 Start the Flask development server:
 
-bash
-Copy code
+
 flask run
 The app should now be running on http://127.0.0.1:5000/.
 
