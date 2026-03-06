@@ -1,12 +1,5 @@
 📋 Task Monitoring Application
 
-
-
-
-
-
-
-
 A Flask-based Task Monitoring Web Application that allows users to register, log in, and manage tasks efficiently.
 The application integrates Flask, SQLAlchemy ORM, and MySQL to provide secure and scalable task tracking.
 
